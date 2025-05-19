@@ -1,0 +1,8 @@
+.move {
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 3rem;
+font-weight: 700;
+margin-bottom: 60px;
+}

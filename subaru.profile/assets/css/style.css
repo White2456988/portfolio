@@ -1,0 +1,411 @@
+/* リセット */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 共通 */
+:root {
+  --body-color: #f5f5f5;
+
+  --primary-text: #2c2c2c;
+  --secondary-text: #ffffff;
+
+  --section-padding: 80px 4%;
+}
+
+body {
+  background-color: var(--body-color);
+  font-family: "Noto Serif JP", serif;
+  color: var(--primary-text);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* フレックス */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.flex-items {
+  width: 48%;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex {
+    gap: 20px;
+  }
+  .flex-items {
+    width: 100%;
+  }
+}
+
+/* テキスト */
+.text {
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  color: var(--primary-text);
+  font-size: 1.5rem;
+}
+.btn hr {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--primary-text);
+  border: none;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover hr {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+/* ヘッダー */
+
+.heading {
+  font-family: "Noto Serif JP", serif;
+  width: 100%;
+  padding: 15px 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 200;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.heading a {
+  color: var(--secondary-text);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+  z-index: 30;
+}
+.heading a:hover {
+  color: var(--primary-text);
+}
+
+/* ナビゲーション */
+.heading nav ul {
+  display: flex;
+  z-index: 30;
+}
+.heading nav ul li a {
+  margin-left: 20px;
+  font-size: 1.2rem;
+}
+.nav-area {
+  z-index: 100;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading a {
+    font-size: 1.3rem;
+  }
+  .heading nav ul li a {
+    font-size: 1rem;
+  }
+}
+
+/* 見出し */
+.mv-content {
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+  padding: 70px;
+  border: solid 3px #a67c52;
+  background-color: #f5f5f5;
+  color: var(--primary-text);
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+}
+
+/* 見出し修正 */
+.mv-content h1 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+.mv-content .mv-text {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .mv-content {
+    max-width: 300px;
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    padding: 30px;
+  }
+  .mv-content h1 {
+    font-size: 1.5rem;
+  }
+  .mv-content .mv-text {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 820px) and (max-width: 1024px) {
+  .mv-content {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    padding: 30px;
+  }
+  .mv-content h1 {
+    font-size: 3.5rem;
+  }
+  .mv-content .mv-text {
+    font-size: 1.8rem;
+  }
+}
+
+/* hero */
+.hero img {
+  height: 750px;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero img {
+    width: 100%;
+    height: 450px;
+  }
+}
+
+/* about */
+#about {
+  padding: var(--section-padding);
+}
+
+/* プロフィール写真 */
+#about img {
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+/* テキスト修正 */
+#about .small {
+  font-size: 0.8rem;
+}
+#about h3 {
+  font-size: 2rem;
+  letter-spacing: 8px;
+}
+#about .text {
+  padding: 20px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #about {
+    text-align: center;
+  }
+  #about .text {
+    padding: 20px 2%;
+  }
+  #about img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (min-width: 820px) and (max-width: 1024px) {
+  #about .flex-items {
+    width: 40%;
+  }
+}
+
+/* skill */
+#skill {
+  padding: var(--section-padding);
+  background-color: #a67c52;
+  color: var(--secondary-text);
+  position: relative;
+}
+
+/* スキルフレックス */
+#skill .flex {
+  align-items: flex-start;
+}
+#skill .flex-items {
+  border-right: solid 1px #ffffff;
+  padding: 0 30px;
+}
+#skill .flex-items:nth-child(2) {
+  border-right: none;
+  padding: 0;
+}
+
+/* アイコン */
+#skill .icons {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* テキスト修正 */
+#skill h3 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #skill .flex-items {
+    border-right: none;
+    border-bottom: solid 1px #ffffff;
+    padding: 0 0 25px 0;
+  }
+  #skill .flex-items:nth-child(2) {
+    border-bottom: none;
+    padding: 0;
+  }
+
+}
+
+@media only screen and (min-width: 820px) and (max-width: 1024px) {
+  #skill .flex-items {
+    width: calc(50% - 20px);
+  }
+}
+
+/* work */
+#work {
+  padding: var(--section-padding);
+  text-align: center;
+}
+
+#work .flex-items {
+  width: 32%;
+  margin-bottom: 50px;
+}
+
+#work .btn {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#work .btn a {
+  flex: 1;
+  font-size: 1rem;
+  padding: 10px 15px;
+  text-align: center;
+  background-color: var(--primary-text);
+  color: var(--secondary-text);
+  border-right: 1px solid #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 奇数の時 */
+#work .btn a:nth-child(odd):hover {
+  background-color: #ffffff;
+  color: var(--primary-text);
+}
+/* 偶数の時 */
+#work .btn a:nth-child(even):hover {
+  background-color: #ffffff;
+  color: var(--primary-text);
+}
+
+#work img {
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+#work img:hover {
+  opacity: 0.5;
+}
+
+/* スマホ＆タブレット対応 */
+@media only screen and (min-width: 820px) and (max-width: 1024px) {
+  #work .flex-items {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #work .flex-items {
+    width: 100%; /* スマホでは1列表示 */
+  }
+}
+
+/* contact */
+#contact {
+  width: 100%;
+  height: auto;
+  background-image: url(../images/contact-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 80px 4% 20px 4%;
+  text-align: center;
+  color: var(--secondary-text);
+  position: relative;
+}
+
+#contact .btn {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--secondary-text);
+  margin-bottom: 60px;
+}
+#contact .btn hr {
+  background-color: var(--secondary-text);
+  height: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+  #contact .btn {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 820px) and (max-width: 1024px) {
+  #contact .btn {
+    font-size: 3rem;
+  }
+}
+
+.footer {
+  text-align: center;
+}

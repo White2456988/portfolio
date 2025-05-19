@@ -1,0 +1,22 @@
+.detail-visual {
+    padding-top: 100px;
+}
+.detail-visual img {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+}
+
+.detail-description,
+.detail-info {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+.detail-info li {
+    padding: 6px 0;
+}

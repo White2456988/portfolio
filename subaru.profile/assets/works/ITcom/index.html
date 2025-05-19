@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>ITcom</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/parts/slider.css">
+    <link rel="stylesheet" href="assets/css/parts/overlay.css">
+</head>
+<body>
+   <!-- navber -->
+   <nav class="navbar navbar-expand-lg navbar-light fixed-top  py-3 style="background: transparent;">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <h2 class="text-white">ITcom</h2>
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Company</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <button class="btn ms-2">Join Us</button>
+        </ul>
+
+        <div class="overlay"></div>
+      </div>
+    </div>
+  </nav>
+
+    <!-- スライダー -->
+    <div class="slider-container">
+        <img src="assets/images/mv(1).jpg" class="active img-fluid" alt="Image 1">
+        <img src="assets/images/mv(2).jpg" class="img-fluid" alt="Image 2">
+        <img src="assets/images/mv(3).jpg" class="img-fluid" alt="Image 3">
+
+        <!-- 半透明マスク -->
+        <div class="mask"></div>
+    </div>
+    
+  <!-- hero -->
+   <div class="hero vh-100 d-flex align-items-center" id="home">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 mx-auto text-center">
+                <h2>TechSolutions</h2>
+                <h1>未来をつくる<br>テクノロジーソリューション</h1>
+                <p>
+                    Shaping the Future with Innovative Technology Solutions
+                </p>
+                <a href="#" class="btn">Contact</a>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <!-- service -->
+   <section id="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <div class="title-area">
+                        <h2 class="heading">SERVICE</h2>
+                        <p class="ja">企業のライフワークを変える</p>
+                        <p class="en">Changing the life work of a company</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card-area -->
+            <div class="row g-4">
+                <!-- データ分析 -->
+                <div class="col-md-4 col-sm-12">
+                    <div class="service card-effect h-100 d-flex flex-column">
+                        <div class="icon-box">
+                            <img src="assets/icons/service-icons (1).png" class="icons" alt="データ分析">
+                        </div>
+                        <h3>データ分析</h3>
+                        <hr>
+                        <p class="text flex-grow-1">
+                            当社のデータ分析サービスは情報を把握し、トレンドを特定し、ビジネスの成長を促進するためにデータの力を活用するお手伝いをするために設計されています。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- クラウドソリューション -->
+                <div class="col-md-4 col-sm-12">
+                    <div class="service card-effect h-100 d-flex flex-column">
+                        <div class="icon-box">
+                            <img src="assets/icons/service-icons (2).png" class="icons" alt="クラウドソリューション">
+                        </div>
+                        <h3>クラウドソリューション</h3>
+                        <hr>
+                        <p class="text flex-grow-1">
+                            クラウドテクノロジーを活用し、スケーラブルで柔軟なソリューションを提供します。ビジネスデータの安全な保管とアクセスを確保します。
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- カスタムソフトウェア開発 -->
+                <div class="col-md-4 col-sm-12">
+                    <div class="service card-effect h-100 d-flex flex-column">
+                        <div class="icon-box">
+                            <img src="assets/icons/service-icons (3).png" class="icons" alt="カスタムソフトウェア開発">
+                        </div>
+                        <h3>カスタムソフトウェア開発</h3>
+                        <hr>
+                        <p class="text flex-grow-1">
+                            私たちはビジネスのニーズに合わせてカスタマイズされたソフトウェアソリューションを提供します。効率的で使いやすいアプリケーションを開発し、ビジネスプロセスを最適化します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mx-auto my-5">
+                <!-- 左側（テキスト） -->
+                <div class="col-12 col-md-6">
+                    <h2 class="heading">テクノロジーで<br class="sp">ビジネスを革新しよう</h2>
+                    <p>
+                    ITcomは革新的なテクノロジーソリューションを提供し、クライアントのビジネスを強化します。<br>
+                    <br>
+                    私たちの専門家のチームは、ビジョンを実現し、競争力を高めるためのパートナーとしてお手伝いします。
+                    </p>
+                    <button class="btn">詳細を見る</button>
+                </div>
+                <!-- 右側（画像） -->
+                <div class="col-md-6 text-center">
+                    <img src="assets/images/service (1).jpg" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid text-img" alt="テクノロジーでビジネスを革新しようPC画像">
+                </div>
+            </div>
+            
+            <div class="row align-items-center mx-auto my-5">
+                <!-- 左側（テキスト） -->
+                <div class="col-12 col-md-6">
+                    <h2 class="heading">テクノロジーへの情熱と<br class="sp">革新の原動力</h2>
+                    <p>
+                        ITcomは単なるテクノロジーの提供者ではありません。<br class="sp-text">
+                        私たちは情熱と創造性をもってテクノロジーを活用し、革新的なソリューションを提供します。<br>
+                        <br>
+                        私たちの専門家たちは、お客様のビジョンを共有し、ビジネスにテクノロジーの力を結集させます。                    
+                    </p>
+                    <button class="btn">詳細を見る</button>
+                </div>
+                <!-- 右側（画像） -->
+                <div class="col-md-6 text-center">
+                    <img src="assets/images/service (2).jpg" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid text-img" alt="テクノロジーでビジネスを革新しようPC画像">
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <!-- project -->
+   <section id="project">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <div class="title-area">
+                        <h2 class="heading">PROJECT</h2>
+                        <p class="ja">企業実績</p>
+                        <p class="en">Recent Project</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="assets/images/project (1).jpg" alt="企業実績1">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="project-title text-white">project 01</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="assets/images/project (2).jpg" alt="企業実績2">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="project-title text-white">project 02</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="assets/images/project (3).jpg" alt="企業実績3">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="project-title text-white">project 03</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="assets/images/project (4).jpg" alt="企業実績4">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="project-title text-white">project 04</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="assets/images/project (5).jpg" alt="企業実績5">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="project-title text-white">project 01</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="project">
+                        <img src="assets/images/project (6).jpg" alt="企業実績6">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="project-title text-white">project 06</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- company -->
+    <section id="company">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <div class="title-area">
+                        <h2 class="heading">COMPANY</h2>
+                        <p class="ja">企業情報</p>
+                        <p class="en">Company Information</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center mx-auto text-center">
+                <div class="col-12 col-md-6">
+                    <dl>
+                        <div>
+                            <dt>代表取締役</dt>
+                            <dd>松永 健一</dd>
+                        </div>
+                        <div>
+                            <dt>所在地</dt>
+                            <dd>OSAKA 〒550-0013<br>大阪府大阪市西区新町1-28-11</dd>
+                        </div>
+                        <div>
+                            <dt>事業内容</dt>
+                            <dd>WEB制作・アプリ開発・データ管理</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <img src="assets/images/company.jpg" alt="社員一同">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <div class="title-area">
+                        <h2 class="heading">CONTACT</h2>
+                        <p class="ja">お問い合わせ</p>
+                        <p class="en">Contact Us</p>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="row g-3 justify-content-center">
+                <div class="col-md-5">
+                    <input type="text" class="form-control" placeholder="Full Name">
+                </div>
+                <div class="col-md-5">
+                    <input type="email" class="form-control" placeholder="E-mail">
+                </div>
+                <div class="col-md-10">
+                    <textarea name="" id="" rows="5" class="form-control" placeholder="Message"></textarea>
+                </div>
+                <div class="col-md-5">
+                    <button class="btn form-control">SEND</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+     <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>ITcom</h2>
+                    </div>
+                    <div class="col-md-2">
+                        <h4>Brand</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2">
+                        <h4>More</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">Privacy & Policy</a></li>
+                            <li><a href="#">Warranty</a></li>
+                            <li><a href="#">Shipment</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h4>Pages</h4>
+                        <ul class="list-unstyled">
+                            <li>Address:info@abc-corp.com</li>
+                            <li>tel:81-3-1234-5678</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="text-center">Copyright &copy; ITcom Inc.All rights reserved.</p>
+            </div>
+        </div>
+     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/script/slider.js"></script>
+    <script src="assets/script/overlay.js"></script>
+</body>
+</html>
