@@ -169,12 +169,13 @@ header .menu-bar li a:hover {
 
 
 /* モバイル向けレスポンシブ */
-@media (max-width: 1000px) {
-    .hero h1 {
-        font-size: 3rem;
+@media screen and (min-width: 768px) and (max-width: 1024px)  {
+    .hero .title h1 {
+        font-size: 5rem;
     }
-    .hero h3 {
-        font-size: 1.5rem;
+    .hero .title h3 {
+        font-size: 3rem;
+        transform: translateX(80px)
     }
 }
 
@@ -231,6 +232,14 @@ header .menu-bar li a:hover {
     line-height: 1.1;
     letter-spacing: 0.1rem;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .sale .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
 
 /* company */
 .company {
@@ -289,6 +298,29 @@ header .menu-bar li a:hover {
 .btn:hover hr {
     transform: scaleX(0);
     transform-origin: right;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .company .info {
+        text-align: center;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+    }
+    .company h2 {
+        text-align: center;
+    }
+    .company p {
+        font-size: 1rem;
+    }
+        /* 右寄せ */
+    .company-text {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    /* 左寄せ */
+    .company-text-last {
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {

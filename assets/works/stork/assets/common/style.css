@@ -233,6 +233,15 @@ header.shrink .logo .small {
     }
 }
 
+@media only screen and (min-width: 820px) and (max-width: 1024px) {
+    .business {
+        padding: 30px 0;
+    }
+    .business .flex-items {
+        width: 100%;
+    }
+}
+
 /* information */
 .information {
     padding: 60px 0;
