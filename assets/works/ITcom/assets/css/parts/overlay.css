@@ -5,14 +5,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* 透明度のある黒背景 */
-    display: none; /* 初期状態では非表示 */
-    z-index: -1; /* ナビゲーションの下に表示 */
+    background-color: rgba(0, 0, 0, 0.8); 
+    display: none; 
+    z-index: -1; 
 }
 
 /* ハンバーガーメニューが開いたとき */
 .navbar-toggler.collapsed + .overlay {
-    display: block; /* メニューが開かれた時に黒背景を表示 */
+    display: block; 
 }
 
 @media only screen and (max-width: 768px) {

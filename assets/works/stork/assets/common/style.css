@@ -291,6 +291,17 @@ header.shrink .logo .small {
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .property .flex {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .property .flex-items {
+        width: 80%;
+        text-align: center;
+    }
+}
+
 /* 問い合わせ */
 .contact {
     color: #fff;

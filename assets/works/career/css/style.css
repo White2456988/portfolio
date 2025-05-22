@@ -25,6 +25,10 @@ a:hover {
     opacity: 0.8;
 }
 
+.sp {
+    display: none;
+}
+
 /* ヘッダー */
 header {
     padding: 20px 0;
@@ -33,7 +37,7 @@ header {
 header a {
     font-size: 30px;
     font-weight: 700;
-    color: #000000;
+    color: #333333;
 }
 
 header a .color {
@@ -255,7 +259,7 @@ footer {
 footer .logo {
     font-size: 36px;
     font-weight: 700;
-    color: #000000;
+    color: #333333;
     margin-bottom: 14px;
 }
 
@@ -264,32 +268,31 @@ footer .color {
 }
 
 /* スマホ対応 */
-/* セクション */
+/* セクション 共通*/
 @media only screen and (max-width: 768px){
     .section .row {
         flex-wrap: wrap;
         gap: 24px;
         padding-top: 30px;
     }
-}
-@media only screen and (max-width: 768px){
+
     .section .col {
         width: 100%;
         text-align: center;
     }
-}
 
-@media only screen and (max-width: 768px){
+    .section img {
+        width: 60%;
+    }
+
     .section h1 {
-        font-size: 36px;
+        font-size: 30px;
         font-weight: 700;
         margin-bottom: 20px;
     }
-}
 
-@media only screen and (max-width: 768px){
-    .section img {
-        width: 60%;
+    .sp {
+        display: block;
     }
 }
 
@@ -305,28 +308,28 @@ footer .color {
     .section2 {
         padding: 0 0 90px 0;
     }
-}
-@media only screen and (max-width: 768px) {
+
     .section2 .row {
         flex-wrap: wrap;
         gap: 24px;
     }
-}
-@media only screen and (max-width: 768px) {
+
     .section2 .col {
         width: 100%;
     }
-}
-@media only screen and (max-width: 768px) {
+
     .section2 .bg {
         width: 160px;
         height: 160px;
     }
-}
 
-@media only screen and (max-width: 768px) {
     .section2 img {
         height: 90px;
+    }
+
+    .section2 .container .text2 {
+        text-align: center;
+        padding: 0 20px;
     }
 }
 
@@ -343,11 +346,30 @@ footer .color {
         font-size: 24px;
         margin-bottom: 16px;
     }
-}
 
-@media only screen and (max-width: 768px) {
     .section4 img {
         width: 130px;
         margin-bottom: 27px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .section h1 {
+        font-size: 32px;
+    }
+
+    .section2 {
+        text-align: center;
+    }
+    .section2 .row {
+       flex-wrap: wrap;
+       gap: 40px;
+    }
+    .section2 .col {
+        width: 100%;
+    }
+    .section2 .text2 {
+        width: 50%;
+        margin: 0 auto;
     }
 }

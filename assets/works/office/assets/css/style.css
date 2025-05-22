@@ -202,6 +202,9 @@ header ul li a:hover {
 #service h3 {
     margin-bottom: 16px;
 }
+#service h3 .sp {
+    display: none;
+}
 #service .text {
     text-align: left;
     line-height: 1.6;
@@ -232,7 +235,31 @@ header ul li a:hover {
     #service .col {
         width: 100%;
     }
+    #service h3 {
+        font-size: 20px;
+    }
+    #service h3 .sp {
+        display: block;
+    }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+     #service .row {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    #service .col {
+        width: 100%;
+    }
+    #service h3 {
+        font-size: 24px;
+    }
+    #service .text {
+        text-align: center;
+        padding: 0 20px;
+    }
+}
+
 
 #work {
     padding: 60px 0;
